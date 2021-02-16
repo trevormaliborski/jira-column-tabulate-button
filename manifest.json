@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Jira Column Tabulate button",
+  "description": "A browser extension that adds a button to each column of a Kanban board in the Jira work tracking system that, when clicked, will open a set number of Jiras in that column in new tabs.",
+  "content_scripts": [
+    {
+      "matches": ["*://tds-jira.atlassian.net/secure/RapidBoard.jspa*"],
+      "js": ["button-for-tabs.js"],
+      "css": ["css/bootstrap/css/bootstrap.css"]
+    }
+  ],
+  "icons": {
+    "48": "images/jira-icon.png"
+  }
+}
